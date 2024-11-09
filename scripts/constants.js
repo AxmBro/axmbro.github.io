@@ -28,13 +28,3 @@ export const routes = {
 export let globalCache = {
   images: {}
 }
-
-export let THEME = localStorage.getItem("theme") ?? "dark";
-
-export function setCurrentTheme(theme) {
-  localStorage.setItem("theme", theme)
-}
-
-export function setNextTheme(theme) {
-  THEME = theme;
-}
