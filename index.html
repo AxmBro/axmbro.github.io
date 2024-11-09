@@ -1,11 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  <h1>Hello World</h1>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AxmBro Portfolio Site</title>
+    <link rel="icon" type="image/x-icon" href="/assets/logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./scripts/index.js" type="module"></script>
+    <script src="./scripts/constants.js" type="module"></script>
+    <script src="./scripts/router.js" type="module"></script>
+  </head>
+  <body>
+    
+    <div class="defaut-navbar-container">
+      <div class="defaut-navbar-extra-container">
+
+        <div class="default-navbar">
+          <a href="/" class="logo openRoute">AxmBro</a>
+
+          <div class="default-navbar-buttons">
+            <a href="/" class="nav-item nav-button-home">Home</a>
+            <a href="/projects" class="nav-item nav-button-projects">Projects</a>
+            <a href="/contact" class="nav-item nav-button-contact">Contact</a>
+            <div class="vertical-line-break"></div>
+            <img class="nav-button-theme nav-button-theme-styles loadImageSpecialTheme" data-value="null">
+          </div>
+
+          <div class="mobile-section">
+            <a id="mobile-nav-toggle" style="padding-right: 0;" value="off">Menu</a>
+            <!-- <div class="vertical-line-break"></div> -->
+            <!-- <img class="nav-button-theme loadImageSpecialTheme" data-value="null"> -->
+          </div>
+        </div>
+
+      </div>
+    </div>
+    
+    <div class="extra-background-container">
+      <div class="extra-background"></div>
+    </div>
+
+    <div class="root" id="root">
+
+      <div class="mobile-nav-dropdown-container">
+        <div class="mobile-nav-dropdown">
+          <div class="mobile-nav">
+            <a href="/" class="nav-item nav-button-home">Home</a>
+            <a href="/projects" class="nav-item nav-button-projects">Projects</a>
+            <a href="/contact" class="nav-item nav-button-contact">Contact</a>
+            <h1 class="nav-item-extra nav-button-theme">Change Theme</h1>
+          </div>
+        </div>
+      </div>
+
+
+      <main>
+        <div id="content"></div>
+      </main>
+
+      <div class="footer-section">
+        <h2>Copyright © AxmBro | All rights reserved</h2>
+      </div>
+
+    </div>
+  </body>
 </html>
