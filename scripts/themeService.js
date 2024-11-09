@@ -11,12 +11,17 @@ export function themeButtonHandler() {
 }
 
 function setTheme(init = false) {
-  let currentTheme = localStorage.getItem("theme")
+  let currentTheme = localStorage.getItem("theme");
 
-  if (currentTheme === "dark") {
-    init ? setDarkTheme() : setLightTheme()
-  } else if (currentTheme === "light") {
-    init ? setLightTheme() : setDarkTheme()
+  // if localStorage value would be incorrect then set theme to dark
+  if (!(currentTheme === "light" || currentTheme === "dark")) {
+    currentTheme = "dark"
+  }
+
+  if (init) {
+    currentTheme === "dark" ? setDarkTheme() : setLightTheme();
+  } else {
+    currentTheme === "dark" ? setLightTheme() : setDarkTheme();
   }
 }
 
