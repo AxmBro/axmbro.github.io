@@ -1,11 +1,9 @@
 body {
-  background-color: rgb(20, 20, 20);
+  background-color: var(--website-background-color);
   margin: 0;
   padding: 0;
-}
-
-h1 {
-  margin: 0;
+  font-family: "Poppins", "Arial";
+  font-weight: 500;
 }
 
 .App {
