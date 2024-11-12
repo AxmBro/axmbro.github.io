@@ -3,23 +3,37 @@
   top: 0;
   z-index: 20;
   position: sticky;
+  padding: 0 1rem;
+  box-sizing: border-box;
 }
 
 .header h1,
 .header a {
   color: rgb(255, 255, 255);
+  font-size: 2rem;
+  text-decoration: none;
 }
 
 .headerContainer {
-  height: 80px;
-  min-width: 0px;
-  position: sticky;
   display: flex;
-  background-color: rgba(206, 206, 206, 0.329);
+  background-color: var(--website-background-color);
   align-items: center;
   justify-content: space-between;
+  min-width: 0px;
+  width: calc(100%);
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--line-break-color);
+  overflow: hidden;
+  box-sizing: border-box;
 }
 
 .headerContainer .rightSide a {
-  padding: 0 10px;
+  font-size: 1rem;
+}
+
+.headerContainer .rightSide {
+  gap: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
