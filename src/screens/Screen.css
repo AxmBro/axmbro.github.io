@@ -1,3 +1,8 @@
+.screen {
+  padding: 0 1rem;
+  box-sizing: border-box;
+}
+
 .screen h1 {
   color: rgb(255, 255, 255);
 }
