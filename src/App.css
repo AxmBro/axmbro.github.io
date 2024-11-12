@@ -11,3 +11,34 @@ body {
   margin: 0 auto;
   box-sizing: content-box;
 }
+
+:root {
+  --primary-text-color: rgb(255, 255, 255);
+  --secondary-text-color: rgb(24, 166, 255);
+  --primary-description-text-color: rgb(192, 192, 192);
+  --secondary-description-text-color: rgb(128, 128, 128);
+  --website-background-color: rgb(22, 22, 22);
+  --navbar-dropdown-background-color: rgb(43, 43, 43);
+  --line-break-color: rgba(133, 133, 133, 0.5);
+  --max-website-width: 64rem;
+  --global-animation-duration: 0.25s;
+  --extra-background-color: black;
+  --primary-font-size: 1.8rem;
+  --secondary-font-size: 1rem;
+  --primary-padding-size: 2.4rem;
+  --secondary-padding-size: 1rem;
+}
+
+h1, h2 {
+  font-weight: 500;
+  word-wrap: break-word;
+  margin: 0;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1rem;
+}
