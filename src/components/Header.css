@@ -1,0 +1,25 @@
+.header {
+  width: 100%;
+  top: 0;
+  z-index: 20;
+  position: sticky;
+}
+
+.header h1,
+.header a {
+  color: rgb(255, 255, 255);
+}
+
+.headerContainer {
+  height: 80px;
+  min-width: 0px;
+  position: sticky;
+  display: flex;
+  background-color: rgba(206, 206, 206, 0.329);
+  align-items: center;
+  justify-content: space-between;
+}
+
+.headerContainer .rightSide a {
+  padding: 0 10px;
+}
