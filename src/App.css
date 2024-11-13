@@ -7,7 +7,7 @@ body {
 }
 
 .App {
-  max-width: 800px;
+  max-width: var(--max-website-width);
   margin: 0 auto;
   box-sizing: content-box;
 }
@@ -15,8 +15,10 @@ body {
 :root {
   --primary-text-color: rgb(255, 255, 255);
   --secondary-text-color: rgb(24, 166, 255);
+
   --primary-description-text-color: rgb(192, 192, 192);
   --secondary-description-text-color: rgb(128, 128, 128);
+
   --website-background-color: rgb(22, 22, 22);
   --navbar-dropdown-background-color: rgb(43, 43, 43);
   --line-break-color: rgba(133, 133, 133, 0.5);
@@ -29,7 +31,9 @@ body {
   --secondary-padding-size: 1rem;
 }
 
-h1, h2 {
+h1,
+h2 {
+  color: rgb(255, 255, 255);
   font-weight: 500;
   word-wrap: break-word;
   margin: 0;
