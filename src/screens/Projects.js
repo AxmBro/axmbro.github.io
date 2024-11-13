@@ -1,7 +1,7 @@
 import React from "react";
 import "./Projects.css";
 import "./Screen.css";
-import ScreenSection from "../components/ScreenSection";
+import {ScreenSection} from "../components/ScreenSection.tsx";
 
 function Projects() {
   return (
