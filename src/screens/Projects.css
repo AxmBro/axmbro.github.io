@@ -1,0 +1,40 @@
+.ProjectsGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.ProjectsGridItem {
+  padding: 1rem;
+  border: 1px solid var(--line-break-color);
+  border-radius: var(--border-radius);
+}
+
+.ProjectsGridItem .Title {
+  line-height: 2.5rem;
+}
+
+.ProjectsGridItem .Image {
+  margin-bottom: 1rem;
+  aspect-ratio: 16 / 9;
+  width: 100%;
+  background-color: var(--line-break-color);
+}
+
+.ProjectsGridItem:hover {
+  border: 1px solid var(--secondary-text-color);
+}
+
+.ProjectsGridItem .TagsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 0.5rem;
+  gap: 0.5rem;
+}
+
+.ProjectsGridItem .TagsContainer .Tag {
+  color: var(--website-background-color);
+  padding: 0 0.2rem;
+  background-color: var(--secondary-description-text-color);
+  display: inline;
+}
