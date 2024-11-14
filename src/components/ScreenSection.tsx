@@ -46,8 +46,8 @@ const ScreenSectionList: React.FC<ScreenSectionListProps> = ({
     <div className="ScreenSectionList" style={style}>
       {title ? <h1>{title}</h1> : null}
       <ul>
-        {items.map((item) => {
-          return <li>{item.name}: <span>{item.value}</span></li>
+        {items.map((item, index) => {
+          return <li key={`li${index}`}>{item.name}: <span key={`span${index}`}>{item.value}</span></li>
         })}
       </ul>
     </div>
