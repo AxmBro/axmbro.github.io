@@ -9,7 +9,7 @@ function Projects() {
       <ScreenSection
         children={
           <>
-            <h1>Projects Screen WOWOWOWOWO</h1>
+            <h1>Projects Screen TODO</h1>
           </>
         }
       ></ScreenSection>
