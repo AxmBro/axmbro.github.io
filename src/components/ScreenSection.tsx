@@ -21,7 +21,7 @@ const ScreenSection: React.FC<ScreenSectionProp> = ({
       {description2 ? <h2>{description2}</h2> : null}
       <div
         style={{
-          paddingTop: ((children) ? "1rem" : 0)
+          paddingTop: ((children && (title || description1 || description2)) ? "1rem" : 0)
         }}>
         {children}
       </div>
