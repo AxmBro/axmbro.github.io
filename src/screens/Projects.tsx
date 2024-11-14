@@ -5,7 +5,7 @@ import { ScreenSection } from "../components/ScreenSection.tsx";
 
 function Projects() {
   return (
-    <div className="projects screen">
+    <div className="projects screen" style={{padding: 0, paddingTop: "1rem", border: ""}}>
       <ScreenSection
         title="Projects"
         description1="Here is a list of all the projects I've worked on or contributed to! Most of them are detailed with videos and screenshots for a closer look at my work."
@@ -61,17 +61,21 @@ const ProjectsGrid: React.FC<ProjectsGridProps> = ({ items }) => {
   return <div className="ProjectsGrid">
     {items.map((item) => {
       return <div className="ProjectsGridItem">
-        <div className="Image"></div>
-        <h1 className="Title">{item.title}</h1>
-        <h2 className="Description">{item.description}</h2>
-        {item.tags ?
-          <div className="TagsContainer">
-            {
-              item.tags.map((tag) => {
-                return <h2 className="Tag">{tag}</h2>
-              })
-            }
-          </div> : ""}
+        <div className="ImageWrapper">
+          <div className="Image"></div>
+        </div>
+        <div className="Container">
+          <h1 className="Title">{item.title}</h1>
+          <h2 className="Description">{item.description}</h2>
+          {item.tags ?
+            <div className="TagsContainer">
+              {
+                item.tags.map((tag) => {
+                  return <h2 className="Tag">{tag}</h2>
+                })
+              }
+            </div> : ""}
+        </div>
       </div>
     })}
   </div>
