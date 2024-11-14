@@ -37,7 +37,7 @@ function Home() {
               }}
               to="/projects"
             >
-              Check Projects
+              My Projects
             </Link>
           </>
         }
