@@ -7,6 +7,7 @@ function Projects() {
   return (
     <div className="projects screen">
       <ScreenSection
+        style={{padding: "1rem 0 0 0", border: "none"}}
         title="Projects"
         description1="Here is a list of all the projects I've worked on or contributed to! Most of them are detailed with videos and screenshots for a closer look at my work."
         children={
