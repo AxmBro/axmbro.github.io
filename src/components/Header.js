@@ -1,18 +1,27 @@
 import React from "react";
 import "./Header.css";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 function Header() {
   return (
     <div className="header">
       <div className="headerContainer">
-        <div className="leftSide">
-          <Link to="/">Axmbro</Link>
+        <div className="firstSection">
+          <NavLink className="logo" to="/">Axmbro</NavLink>
         </div>
-        <div className="rightSide">
-          <Link to="/">Home</Link>
-          <Link to="/projects">Projects</Link>
-          <Link to="/contact">Contact</Link>
+        <div className="secondSection">
+          <NavLink
+            to="/projects"
+            className={({ isActive }) => (isActive ? "headerLinkActive" : "headerLink")}
+          >
+            Projects
+          </NavLink>
+          <NavLink
+            to="/contact"
+            className={({ isActive }) => (isActive ? "headerLinkActive" : "headerLink")}
+          >
+            Contact
+          </NavLink>
         </div>
       </div>
     </div>

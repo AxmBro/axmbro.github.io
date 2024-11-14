@@ -22,18 +22,38 @@
   min-width: 0px;
   width: calc(100%);
   padding: 1rem 0;
-  border-bottom: 1px solid var(--line-break-color);
+  border-bottom: 1px solid var(--secondary-text-color);
   overflow: hidden;
   box-sizing: border-box;
 }
 
-.headerContainer .rightSide a {
+.headerContainer .secondSection a {
   font-size: 1rem;
 }
 
-.headerContainer .rightSide {
+.headerContainer .secondSection {
   gap: 1rem;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.headerContainer .headerLinkActive {
+  text-decoration: underline;
+}
+
+.headerContainer .headerLinkActive:hover {
+  color: var(--secondary-text-color);
+}
+
+.headerContainer .headerLink:hover {
+  color: var(--secondary-text-color);
+}
+
+.headerContainer .logo {
+  font-weight: 600;
+}
+
+.headerContainer .logo:hover {
+  color: var(--secondary-text-color);
 }
