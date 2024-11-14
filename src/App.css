@@ -29,6 +29,8 @@ body {
   --secondary-font-size: 1rem;
   --primary-padding-size: 2.4rem;
   --secondary-padding-size: 1rem;
+
+  --border-radius: 8px
 }
 
 h1,
