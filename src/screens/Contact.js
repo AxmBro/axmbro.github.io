@@ -1,18 +1,20 @@
 import React from "react";
 import "./Contact.css";
 import "./Screen.css";
-import {ScreenSection} from "../components/ScreenSection.tsx";
+import { ScreenSectionList } from "../components/ScreenSection.tsx";
 
 function Contact() {
   return (
     <div className="contact screen">
-      <ScreenSection
-        children={
-          <>
-            <h1>Contact Screen WOWOWOWOWO</h1>
-          </>
-        }
-      ></ScreenSection>
+      <ScreenSectionList
+        title="Contact"
+        items={[
+          { name: "Email", value: "axmbro@gmail.com" },
+          { name: "Discord", value: "AxmBro" },
+          { name: "Discord Server", value: "discord.gg/wJhH86c2wb" },
+          { name: "YouTube", value: "@axmbro" },
+        ]}
+      ></ScreenSectionList>
     </div>
   );
 }
