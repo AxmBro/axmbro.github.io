@@ -1,0 +1,23 @@
+.Button {
+  font-weight: 600;
+  color: var(--primary-text-color);
+  display: inline-block;
+  padding: 0.5rem;
+  border: 1px solid var(--line-break-color);
+  border-radius: 8px;
+}
+
+.Button:hover {
+  cursor: pointer;
+  border: 1px solid var(--secondary-text-color);
+}
+
+.ButtonNoBorder {
+  border: 0 !important;
+  border-radius: 8px;
+}
+
+.ButtonNoBorder:hover {
+  cursor: pointer;
+  border: 0 !important;
+}
