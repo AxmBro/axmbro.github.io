@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/static/css/main.b8935aba.css",
-    "main.js": "/static/js/main.cbddc3ee.js",
-    "static/media/hometree1.png": "/static/media/hometree1.c14c00bfa09bcfb8a5d0.png",
-    "static/media/simple_server_form1.png": "/static/media/simple_server_form1.193bcd1fbaa998bf0265.png",
-    "static/media/shop_form1.png": "/static/media/shop_form1.8c51ac9407a5e7749802.png",
-    "static/media/bbReleaseThumbnail.png": "/static/media/bbReleaseThumbnail.a42e690a4847203fb75d.png",
-    "static/media/murderDetector1.png": "/static/media/murderDetector1.6d9ab9ddbb977afebf96.png",
-    "static/media/thisweb.png": "/static/media/thisweb.5ecb34fa80e69b39cd99.png",
-    "static/media/obsba.png": "/static/media/obsba.87a6e786e566a1beaa98.png",
-    "index.html": "/index.html",
-    "main.b8935aba.css.map": "/static/css/main.b8935aba.css.map",
-    "main.cbddc3ee.js.map": "/static/js/main.cbddc3ee.js.map"
+    "main.css": "/axmbro.github.io/static/css/main.b8935aba.css",
+    "main.js": "/axmbro.github.io/static/js/main.b883af4c.js",
+    "static/media/hometree1.png": "/axmbro.github.io/static/media/hometree1.c14c00bfa09bcfb8a5d0.png",
+    "static/media/simple_server_form1.png": "/axmbro.github.io/static/media/simple_server_form1.193bcd1fbaa998bf0265.png",
+    "static/media/shop_form1.png": "/axmbro.github.io/static/media/shop_form1.8c51ac9407a5e7749802.png",
+    "static/media/bbReleaseThumbnail.png": "/axmbro.github.io/static/media/bbReleaseThumbnail.a42e690a4847203fb75d.png",
+    "static/media/murderDetector1.png": "/axmbro.github.io/static/media/murderDetector1.6d9ab9ddbb977afebf96.png",
+    "static/media/thisweb.png": "/axmbro.github.io/static/media/thisweb.5ecb34fa80e69b39cd99.png",
+    "static/media/obsba.png": "/axmbro.github.io/static/media/obsba.87a6e786e566a1beaa98.png",
+    "index.html": "/axmbro.github.io/index.html",
+    "main.b8935aba.css.map": "/axmbro.github.io/static/css/main.b8935aba.css.map",
+    "main.b883af4c.js.map": "/axmbro.github.io/static/js/main.b883af4c.js.map"
   },
   "entrypoints": [
     "static/css/main.b8935aba.css",
-    "static/js/main.cbddc3ee.js"
+    "static/js/main.b883af4c.js"
   ]
 }
