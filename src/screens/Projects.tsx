@@ -5,7 +5,7 @@ import { ScreenSection } from "../components/ScreenSection.tsx";
 
 function Projects() {
   return (
-    <div className="projects screen" style={{padding: 0, paddingTop: "1rem", border: ""}}>
+    <div className="projects screen">
       <ScreenSection
         title="Projects"
         description1="Here is a list of all the projects I've worked on or contributed to! Most of them are detailed with videos and screenshots for a closer look at my work."
