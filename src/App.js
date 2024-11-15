@@ -9,7 +9,7 @@ import Footer from "./components/Footer";
 
 function App() {
   return (
-    <Router basename="/axmbro.github.io">
+    <Router basename="/">
       <div className="App">
         <Header />
         <Routes>
