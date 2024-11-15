@@ -34,7 +34,6 @@ function Home() {
               className="Button"
               style={{
                 textDecoration: 0,
-                border: "1px solid var(--secondary-text-color)",
                 marginLeft: "1rem",
               }}
               to="/projects"
@@ -90,6 +89,27 @@ function Home() {
               }
             ></Card>
             <Card
+              title="Learning"
+              children={
+                <ScreenSectionList
+                  style={{ padding: 0, border: 0 }}
+                  items={[
+                    { name: "Python", value: "4/10" },
+                    { name: "React", value: "4/10" },
+                  ]}
+                ></ScreenSectionList>
+              }
+            ></Card>
+            <Card
+              title="Other"
+              children={
+                <ScreenSectionList
+                  style={{ padding: 0, border: 0 }}
+                  items={[{ name: "Minecraft Bedrock JsonUI", value: "10/10" }]}
+                ></ScreenSectionList>
+              }
+            ></Card>
+            <Card
               title="Languages"
               children={
                 <ScreenSectionList
@@ -97,19 +117,6 @@ function Home() {
                   items={[
                     { name: "Polish", value: "Native" },
                     { name: "English", value: "B2, Learning" },
-                  ]}
-                ></ScreenSectionList>
-              }
-            ></Card>
-            <Card
-              title="Learning/Other"
-              children={
-                <ScreenSectionList
-                  style={{ padding: 0, border: 0 }}
-                  items={[
-                    { name: "Python", value: "4/10" },
-                    { name: "React", value: "2/10" },
-                    { name: "JSON", value: "10/10" },
                   ]}
                 ></ScreenSectionList>
               }
@@ -131,7 +138,6 @@ function Home() {
               className="Button"
               style={{
                 textDecoration: 0,
-                border: "1px solid var(--secondary-text-color)",
               }}
               to="/contact"
             >
