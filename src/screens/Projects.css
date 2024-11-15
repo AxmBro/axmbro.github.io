@@ -10,7 +10,11 @@
   padding: 1rem;
   border: 1px solid var(--line-break-color);
   border-radius: var(--border-radius);
-  min-height: 100px; 
+  min-height: 100px;
+}
+
+.ProjectsGridItem:hover {
+  cursor: pointer;
 }
 
 .ProjectsGridItem .Title {
@@ -25,7 +29,7 @@
 
 .ProjectsGridItem .Image {
   width: 100%;
-  aspect-ratio: 16 / 9; 
+  aspect-ratio: 16 / 9;
   background-color: var(--line-break-color);
 }
 
