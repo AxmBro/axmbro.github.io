@@ -62,17 +62,21 @@ const ProjectsGrid: React.FC<ProjectsGridProps> = ({ items }) => {
   return <div className="ProjectsGrid">
     {items.map((item, index) => {
       return <div key={`ProjectsGridKey${index}`} className="ProjectsGridItem">
-        <div className="Image"></div>
-        <h1 className="Title">{item.title}</h1>
-        <h2 className="Description">{item.description}</h2>
-        {item.tags ?
-          <div className="TagsContainer">
-            {
-              item.tags.map((tag, index) => {
-                return <h2 key={`TagKey${index}`} className="Tag">{tag}</h2>
-              })
-            }
-          </div> : ""}
+        <div className="ImageWrapper">
+          <div className="Image"></div>
+        </div>
+        <div className="Container">
+          <h1 className="Title">{item.title}</h1>
+          <h2 className="Description">{item.description}</h2>
+          {item.tags ?
+            <div className="TagsContainer">
+              {
+                item.tags.map((tag, index) => {
+                  return <h2 key={`TagKey${index}`} className="Tag">{tag}</h2>
+                })
+              }
+            </div> : ""}
+        </div>
       </div>
     })}
   </div>
