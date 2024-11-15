@@ -8,6 +8,7 @@ import {
 import { Link } from "react-router-dom";
 import Button from "../components/Button.tsx";
 import { ProjectsGrid } from "./Projects.tsx";
+import { Card } from "../components/Card.tsx";
 
 function Home() {
   return (
@@ -47,46 +48,73 @@ function Home() {
         title="My Skills"
         description1="Here is a list of my skills, rated out of 10 based on my own knowledge and experience."
         children={
-          <>
-          {/* <h2>TODO - divide things into sections or cards with header</h2>
-            <ScreenSectionList
-              style={{ padding: 0, border: 0 }}
-              items={[
-                { name: "HTML", value: "7/10" },
-                { name: "CSS", value: "5/10" },
-                { name: "JAVASCRIPT", value: "6/10" },
-                { name: "Github", value: "6/10" },
-                { name: "Visual Studio Code", value: "7/10" },
-                { name: "BlockBench", value: "5/10" },
-                { name: "Python", value: "4/10" },
-                { name: "React", value: "2/10" },
-                { name: "JSON", value: "10/10" },
-                { name: "Polish", value: "Native" },
-                { name: "English", value: "B2, Learning" },
-              ]}
-            ></ScreenSectionList> */}
-                        {/* <ProjectsGrid
-              items={[
-                {
-                  title: "Languages",
-                  description: "• HTML 7/10 • CSS 5/10 • JAVASCRIPT 6/10",
-                },
-                {
-                  title: "Version Control",
-                  description: "• Github 6/10",
-                },
-                {
-                  title: "Tools",
-                  description: "• Visual Studio Code 7/10 • BlockBench 5/10",
-                },
-                {
-                  title: "Learning/Other",
-                  description: "• Pyhton 4/10 • React 2/10 • JSON 10/10",
-                },
-              ]}>
-
-            </ProjectsGrid> */}
-          </>
+          <div
+            style={{
+              display: "grid",
+              gridTemplateColumns: "1fr 1fr",
+              gap: "1rem",
+            }}
+          >
+            <Card
+              title="Programming"
+              children={
+                <ScreenSectionList
+                  style={{ padding: 0, border: 0 }}
+                  items={[
+                    { name: "HTML", value: "7/10" },
+                    { name: "CSS", value: "5/10" },
+                    { name: "JAVASCRIPT", value: "6/10" },
+                  ]}
+                ></ScreenSectionList>
+              }
+            ></Card>
+            <Card
+              title="Version Control"
+              children={
+                <ScreenSectionList
+                  style={{ padding: 0, border: 0 }}
+                  items={[{ name: "Github", value: "6/10" }]}
+                ></ScreenSectionList>
+              }
+            ></Card>
+            <Card
+              title="Tools"
+              children={
+                <ScreenSectionList
+                  style={{ padding: 0, border: 0 }}
+                  items={[
+                    { name: "Visual Studio Code", value: "7/10" },
+                    { name: "BlockBench", value: "5/10" },
+                  ]}
+                ></ScreenSectionList>
+              }
+            ></Card>
+            <Card
+              title="Languages"
+              children={
+                <ScreenSectionList
+                  style={{ padding: 0, border: 0 }}
+                  items={[
+                    { name: "Polish", value: "Native" },
+                    { name: "English", value: "B2, Learning" },
+                  ]}
+                ></ScreenSectionList>
+              }
+            ></Card>
+            <Card
+              title="Learning/Other"
+              children={
+                <ScreenSectionList
+                  style={{ padding: 0, border: 0 }}
+                  items={[
+                    { name: "Python", value: "4/10" },
+                    { name: "React", value: "2/10" },
+                    { name: "JSON", value: "10/10" },
+                  ]}
+                ></ScreenSectionList>
+              }
+            ></Card>
+          </div>
         }
       ></ScreenSection>
       <ScreenSection
