@@ -134,18 +134,18 @@ function Home() {
         description1="Whether you have a project in mind or just want to reach out, I would love to hear from you! Let us make something amazing together!"
         children={
           <>
-            <Link
-              className="Button"
-              style={{
-                textDecoration: 0,
-              }}
-              to="/contact"
-            >
-              Contact Page
-            </Link>
+            <ScreenSectionList
+              style={{ padding: 0, border: 0 }}
+              items={[
+                { name: "Email", value: "axmbro@gmail.com" },
+                { name: "Discord", value: "AxmBro" },
+                { name: "Discord Server", value: "discord.gg/wJhH86c2wb" },
+                { name: "YouTube", value: "@axmbro" },
+              ]}
+            ></ScreenSectionList>
             <a
               className="Button"
-              style={{ textDecoration: 0, marginLeft: "1rem" }}
+              style={{ textDecoration: 0, marginTop: "1rem" }}
               href="mailto:axmbro@gmail.com?subject=Contact%20request!"
             >
               Send Email
