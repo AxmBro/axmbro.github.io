@@ -8,6 +8,6 @@
   line-height: 2.5rem;
 }
 
-.ProjectsGridItem:hover .Title {
+.Card .ProjectsGridItem:hover .Title {
   color: var(--secondary-text-color);
 }
