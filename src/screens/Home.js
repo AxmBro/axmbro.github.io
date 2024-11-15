@@ -6,8 +6,7 @@ import {
   ScreenSectionList,
 } from "../components/ScreenSection.tsx";
 import { Link } from "react-router-dom";
-import Button from "../components/Button.tsx";
-import { ProjectsGrid } from "./Projects.tsx";
+import "../components/Button.css";
 import { Card } from "../components/Card.tsx";
 
 function Home() {
