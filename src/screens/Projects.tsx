@@ -78,4 +78,4 @@ const ProjectsGrid: React.FC<ProjectsGridProps> = ({ items }) => {
   </div>
 }
 
-export default Projects;
+export {Projects, ProjectsGrid};

@@ -22,7 +22,7 @@
   min-width: 0px;
   width: calc(100%);
   padding: 1rem 0;
-  border-bottom: 1px solid var(--secondary-text-color);
+  border-bottom: 1px solid var(--line-break-color);
   overflow: hidden;
   box-sizing: border-box;
 }

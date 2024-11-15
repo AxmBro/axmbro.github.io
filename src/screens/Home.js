@@ -7,6 +7,7 @@ import {
 } from "../components/ScreenSection.tsx";
 import { Link } from "react-router-dom";
 import Button from "../components/Button.tsx";
+import { ProjectsGrid } from "./Projects.tsx";
 
 function Home() {
   return (
@@ -47,7 +48,7 @@ function Home() {
         description1="Here is a list of my skills, rated out of 10 based on my own knowledge and experience."
         children={
           <>
-          <h2>TODO - divide things into sections or cards with header</h2>
+          {/* <h2>TODO - divide things into sections or cards with header</h2>
             <ScreenSectionList
               style={{ padding: 0, border: 0 }}
               items={[
@@ -63,7 +64,28 @@ function Home() {
                 { name: "Polish", value: "Native" },
                 { name: "English", value: "B2, Learning" },
               ]}
-            ></ScreenSectionList>
+            ></ScreenSectionList> */}
+                        {/* <ProjectsGrid
+              items={[
+                {
+                  title: "Languages",
+                  description: "• HTML 7/10 • CSS 5/10 • JAVASCRIPT 6/10",
+                },
+                {
+                  title: "Version Control",
+                  description: "• Github 6/10",
+                },
+                {
+                  title: "Tools",
+                  description: "• Visual Studio Code 7/10 • BlockBench 5/10",
+                },
+                {
+                  title: "Learning/Other",
+                  description: "• Pyhton 4/10 • React 2/10 • JSON 10/10",
+                },
+              ]}>
+
+            </ProjectsGrid> */}
           </>
         }
       ></ScreenSection>

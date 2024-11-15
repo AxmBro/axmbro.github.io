@@ -21,8 +21,8 @@
   background-color: var(--line-break-color);
 }
 
-.ProjectsGridItem:hover {
-  border: 1px solid var(--secondary-text-color);
+.ProjectsGridItem:hover .Title {
+  color: var(--secondary-text-color);
 }
 
 .ProjectsGridItem .TagsContainer {

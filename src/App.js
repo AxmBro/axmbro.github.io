@@ -3,7 +3,7 @@ import "./App.css";
 import Home from "./screens/Home";
 import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
 import Header from "./components/Header";
-import Projects from "./screens/Projects.tsx";
+import { Projects } from "./screens/Projects.tsx";
 import Contact from "./screens/Contact";
 import Footer from "./components/Footer";
 
